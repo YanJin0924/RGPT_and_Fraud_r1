@@ -25,7 +25,7 @@ plt.grid(axis="y", linestyle="--", alpha=0.7)
 plt.tight_layout()
 # 保存图片
 plt.savefig("result/figure/DSR对比图.png", dpi=300, bbox_inches="tight")
-print("✅ DSR对比图已保存到：result/figure/DSR对比图.png")
+print(" DSR对比图已保存到：result/figure/DSR对比图.png")
 
 plt.figure(figsize=(14, 7))
 metrics = ["DSR防御成功率", "准确率", "F1分数"]
