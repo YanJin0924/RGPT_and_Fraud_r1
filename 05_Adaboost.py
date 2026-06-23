@@ -32,7 +32,6 @@ metrics = ["DSR防御成功率", "准确率", "F1分数"]
 colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]
 for i, metric in enumerate(metrics):
     plt.plot(metrics_df["测试集类型"], metrics_df[metric], marker="o", color=colors[i], label=metric, linewidth=2)
-# 图表设置
 plt.title("虚假通话检测模型各指标对比", fontsize=14, fontweight="bold")
 plt.xlabel("测试集类型", fontsize=12)
 plt.ylabel("指标值", fontsize=12)
@@ -43,6 +42,5 @@ plt.grid(linestyle="--", alpha=0.7)
 plt.tight_layout()
 # 保存图片
 plt.savefig("result/figure/全指标对比图.png", dpi=300, bbox_inches="tight")
-print("✅ 全指标对比图已保存到：result/figure/全指标对比图.png")
 
-print("\n✅ 所有可视化图表生成完成！可直接插入论文报告")
+
